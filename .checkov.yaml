@@ -1,0 +1,4 @@
+skip-path:
+  - venv
+  - node_modules
+  - .git

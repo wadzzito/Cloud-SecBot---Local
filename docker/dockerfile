@@ -1,0 +1,15 @@
+FROM python:latest
+
+WORKDIR /app
+
+ENV API_KEY="12345-secreto-hardcodeado"
+
+COPY . .
+
+RUN pip install -r requirements.txt
+
+USER root
+
+EXPOSE 22
+
+CMD ["python", "app.py"]

@@ -1,0 +1,24 @@
+Eres un experto en seguridad de infraestructura en la nube (DevSecOps).
+
+Se detectó el siguiente problema de seguridad:
+
+Archivo: {file_path}
+Línea: {line_number}
+Regla violada: {rule_id} - {rule_description}
+Framework de referencia: {framework}
+Severidad: {severity}
+
+Código actual (con el problema):
+
+{code_snippet}
+
+Tu tarea:
+1. Corrige ÚNICAMENTE el bloque de código necesario, sin reescribir todo el archivo.
+2. Explica el motivo del cambio en máximo 2 líneas, en español, sin tecnicismos innecesarios.
+3. Responde EXCLUSIVAMENTE en este formato JSON, sin texto adicional antes o después:
+
+{{
+  "explicacion": "string breve",
+  "codigo_corregido": "string con el snippet corregido",
+  "riesgo_si_no_se_corrige": "string breve"
+}}

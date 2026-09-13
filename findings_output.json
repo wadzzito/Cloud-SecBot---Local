@@ -1,0 +1,54 @@
+[
+  {
+    "file_path": "/dockerfile",
+    "rule_id": "CKV_DOCKER_7",
+    "rule_description": "Ensure the base image uses a non latest version tag",
+    "severity": "P2",
+    "source_module": "docker",
+    "line_number": 1,
+    "framework": "CIS",
+    "resource_type": "/dockerfile.FROM",
+    "code_snippet": "FROM python:latest\n",
+    "content_id": null,
+    "id": "b549de32-f20f-4d64-9c8c-ef08809dd078"
+  },
+  {
+    "file_path": "/dockerfile",
+    "rule_id": "CKV_DOCKER_1",
+    "rule_description": "Ensure port 22 is not exposed",
+    "severity": "P2",
+    "source_module": "docker",
+    "line_number": 13,
+    "framework": "CIS",
+    "resource_type": "/dockerfile.EXPOSE",
+    "code_snippet": "EXPOSE 22\n",
+    "content_id": null,
+    "id": "df3034e2-388b-424a-a09a-e5c032837947"
+  },
+  {
+    "file_path": "/dockerfile",
+    "rule_id": "CKV_DOCKER_8",
+    "rule_description": "Ensure the last USER is not root",
+    "severity": "P2",
+    "source_module": "docker",
+    "line_number": 11,
+    "framework": "CIS",
+    "resource_type": "/dockerfile.USER",
+    "code_snippet": "USER root\n",
+    "content_id": null,
+    "id": "23fcab30-01f5-4994-ae1e-a5f35b79ebd8"
+  },
+  {
+    "file_path": "/dockerfile",
+    "rule_id": "CKV_DOCKER_2",
+    "rule_description": "Ensure that HEALTHCHECK instructions have been added to container images",
+    "severity": "P2",
+    "source_module": "docker",
+    "line_number": 1,
+    "framework": "CIS",
+    "resource_type": "/dockerfile.",
+    "code_snippet": "FROM python:latest\n\n\n\nWORKDIR /app\n\n\n\nENV API_KEY=\"12345-secreto-hardcodeado\"\n\n\n\nCOPY . .\n\n\n\nRUN pip install -r requirements.txt\n\n\n\nUSER root\n\n\n\nEXPOSE 22\n\n\n\nCMD [\"python\", \"app.py\"]",
+    "content_id": null,
+    "id": "256c3e6c-7921-4feb-b164-bcf9da470ca6"
+  }
+]

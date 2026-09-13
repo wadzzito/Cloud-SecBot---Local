@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cloud SecBot</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="alert-container" id="alertContainer">
+    <div class="severity-badge" id="severityBadge">P0</div>
+    <h1 id="title">Vulnerabilidad detectada</h1>
+    <p class="file-info" id="fileInfo">archivo.tf — línea 12</p>
+    <p class="risk" id="riskText">Descripción breve del riesgo aquí.</p>
+
+    <div class="buttons">
+      <button id="applyBtn" class="btn btn-primary">🤖 Aplicar corrección (BotIA)</button>
+      <button id="dismissBtn" class="btn btn-secondary">Omitir por ahora</button>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
